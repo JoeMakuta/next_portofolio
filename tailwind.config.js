@@ -10,6 +10,23 @@ module.exports = {
       colors: {
         dark_bg: "#161616",
         default_color: "#DBDBDB",
+        border_color: "#575757",
+        my_orange: "#FEA13B",
+      },
+      animation: {
+        text: "text 5s ease infinite",
+      },
+      keyframes: {
+        text: {
+          "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "left center",
+          },
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "center right",
+          },
+        },
       },
     },
   },
