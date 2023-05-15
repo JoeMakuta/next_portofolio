@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        main: "url('../public/asserts/Dot Grid.svg')",
+      },
       colors: {
         dark_bg: "#161616",
         default_color: "#DBDBDB",
@@ -15,6 +18,7 @@ module.exports = {
       },
       animation: {
         text: "text 5s ease infinite",
+        background: "background 50s ease infinite",
       },
       keyframes: {
         text: {
@@ -25,6 +29,19 @@ module.exports = {
           "50%": {
             "background-size": "200% 200%",
             "background-position": "center right",
+          },
+        },
+        background: {
+          "0%": {
+            "background-position": "top",
+          },
+
+          "50%": {
+            "background-position": "bottom",
+          },
+
+          "100%": {
+            "background-position": "top",
           },
         },
       },

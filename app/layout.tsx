@@ -14,7 +14,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className=" bg-dark_bg text-default_color tracking-tight">
+    <html
+      lang="en"
+      className=" bg-dark_bg max-w-[100vw] overflow-x-hidden text-default_color tracking-tight"
+    >
       <body className={inter.className}>{children}</body>
     </html>
   );
