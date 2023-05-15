@@ -1,0 +1,96 @@
+"use client";
+import { collectAppConfig } from "next/dist/build/utils";
+import { useState } from "react";
+
+const details = [
+  {
+    name: "Location : ",
+    description: "DRC, North-Kivu",
+  },
+  {
+    name: "Website : ",
+    description: "DRC, North-Kivu",
+  },
+  {
+    name: "Email : ",
+    description: "DRC, North-Kivu",
+  },
+];
+
+const About = () => {
+  const [collapse, setCollapse] = useState(false);
+  return (
+    <section className=" bg-dark_bg w-screen  flex justify-center items-center ">
+      <div className=" flex justify-between gap-6 max-w-[1400px] flex-wrap w-[98vw]  p-6 border-t-[1px] py-10 border-t-border_color ">
+        <h1 className=" font-bold ">About Me</h1>
+        <div className=" flex flex-col gap-5 w-full text-sm  md:w-[80%] ">
+          <div>
+            <div className="font-light transition-all flex flex-col gap-4 ">
+              <p>
+                {
+                  "My name is Josué Makuta, I am a full-stack web developer. I have always been passionate about technology and how it can be used to solve real-world problems. That's why I decided to pursue a career in web development."
+                }
+              </p>
+              {collapse && (
+                <div className=" flex flex-col gap-4  ">
+                  <p>
+                    {
+                      "I have experience working with various programming languages such as HTML, CSS, and JavaScript. I am also proficient in using popular web development frameworks like React, Next.js, and ExpressJs.My expertise lies in developing responsive and user-friendly websites that are optimized for performance and search engines."
+                    }
+                  </p>
+                  <p>
+                    {
+                      "I am also skilled in building robust backend systems that can handle large amounts of data and traffic. Apart from technical skills, I believe that communication is key to successful project delivery. That's why I always strive to maintain clear communication with my clients throughout the development process to ensure that their needs are met. When I'm not coding or learning new technologies, you can find me reading books or playing musics."
+                    }
+                  </p>
+                  <p>
+                    {
+                      "Thank you for taking the time to read my about page. If you have any questions or would like to discuss a project, feel free to contact me!"
+                    }
+                  </p>
+                </div>
+              )}
+            </div>
+            <button
+              className="font-bold"
+              onClick={() => {
+                setCollapse(!collapse);
+              }}
+            >
+              {!collapse ? " Read more" : " Show less"}
+            </button>
+          </div>
+          <div className=" flex flex-wrap md:flex-row flex-col gap-4 justify-around bg-slate-800 bg-opacity-30 rounded-md p-4">
+            <div className=" flex flex-col gap-2 ">
+              <p className=" text-gray-500 ">Location : </p>
+              <p> 🌍 DRC, North-Kivu</p>
+            </div>
+            <div className=" flex flex-col gap-2 ">
+              <p className=" text-gray-500 ">WebSite : </p>
+              <a href="#" className=" text-blue-400  ">
+                🌍 Josue Makuta
+              </a>
+            </div>
+            <div className=" flex flex-col gap-2 ">
+              <p className=" text-gray-500 ">Email : </p>
+              <a
+                href="mailto:makutajosue@gmail.com"
+                className=" text-blue-400  "
+              >
+                ✉️ makutajosue@gmail.com
+              </a>
+            </div>
+            <div className=" flex flex-col gap-2 ">
+              <p className="  text-gray-500">Phone : </p>
+              <a href="tel:+243972383759" className="  ">
+                📞 +243 972 383 759
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;

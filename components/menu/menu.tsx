@@ -38,7 +38,7 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <main>
-      <nav className=" flex flex-col w-screen fixed top-0 z-10 justify-center bg-dark_bg items-center ">
+      <nav className=" flex flex-col w-screen fixed top-0 z-20 justify-center bg-dark_bg items-center ">
         <div className="max-w-[1400px]  px-7 2xl:px-0 w-full bg-dark_bg flex justify-between  py-5 items-center border-b-[1px] border-b-border_color ">
           <div className=" flex justify-center items-center gap-3 ">
             <div className=" flex justify-center items-center w-7 h-7 md:w-10 md:h-10 rounded-full border-[1px] border-default_color">
