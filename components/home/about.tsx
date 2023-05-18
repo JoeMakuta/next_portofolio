@@ -20,12 +20,12 @@ const details = [
 const About = () => {
   const [collapse, setCollapse] = useState(false);
   return (
-    <section className=" bg-dark_bg w-screen  flex justify-center items-center ">
-      <div className=" flex justify-between gap-6 max-w-[1400px] flex-wrap w-[98vw]  p-6 border-t-[1px] py-10 border-t-border_color ">
+    <section className=" dark:bg-dark_bg w-screen  flex justify-center items-center ">
+      <div className=" flex justify-between gap-6 max-w-[1400px] flex-wrap w-[98vw] box-border  p-6 border-t-[1px] py-10 border-t-border_color ">
         <h1 className=" font-bold ">About Me</h1>
         <div className=" flex flex-col gap-5 w-full text-sm  md:w-[80%] ">
           <div>
-            <div className="font-light transition-all flex flex-col gap-4 ">
+            <div className="font-light  flex flex-col gap-4 ">
               <p>
                 {
                   "My name is Josué Makuta, I am a full-stack web developer. I have always been passionate about technology and how it can be used to solve real-world problems. That's why I decided to pursue a career in web development."
@@ -63,7 +63,10 @@ const About = () => {
           <div className=" flex flex-wrap md:flex-row flex-col gap-4 justify-around bg-slate-800 bg-opacity-30 rounded-md p-4">
             <div className=" flex flex-col gap-2 ">
               <p className=" text-gray-500 ">Location : </p>
-              <p> 🌍 DRC, North-Kivu</p>
+              <a href="https://goo.gl/maps/dVoVkKAKDjyzurbs8">
+                {" "}
+                🌍 DRC, North-Kivu
+              </a>
             </div>
             <div className=" flex flex-col gap-2 ">
               <p className=" text-gray-500 ">WebSite : </p>
