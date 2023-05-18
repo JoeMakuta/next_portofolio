@@ -21,7 +21,7 @@ const About = () => {
   const [collapse, setCollapse] = useState(false);
   return (
     <section className=" dark:bg-dark_bg w-screen  flex justify-center items-center ">
-      <div className=" flex justify-between gap-6 max-w-[1400px] flex-wrap w-[98vw] box-border  p-6 border-t-[1px] py-10 border-t-border_color ">
+      <div className=" flex justify-between gap-6 max-w-[1400px] flex-wrap w-[98vw] box-border  p-6 border-t-[1px] py-10 dark:border-t-border_color border-t-gray-300 ">
         <h1 className=" font-bold ">About Me</h1>
         <div className=" flex flex-col gap-5 w-full text-sm  md:w-[80%] ">
           <div>

@@ -61,7 +61,7 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
   return (
     <main className={darkMode ? "dark" : "light"}>
       <nav className="   text-dark_bg max-w-[100vw]  tracking-tight dark:text-default_color  flex flex-col w-screen fixed top-0 z-20 justify-center bg-[#f0f0f0] dark:bg-dark_bg items-center ">
-        <div className="max-w-[1400px]  px-7 2xl:px-0 w-full bg-inherit dark:bg-dark_bg flex justify-between  py-5 items-center border-b-[1px] border-b-border_color ">
+        <div className="max-w-[1400px]  px-7 2xl:px-0 w-full bg-inherit dark:bg-dark_bg flex justify-between  py-5 items-center border-b-[1px] dark:border-b-border_color border-b-gray-300  ">
           <div className=" flex justify-center items-center gap-3 ">
             <div className=" flex justify-center items-center w-7 h-7 md:w-10 md:h-10 rounded-full border-[1px] border-default_color">
               <AiOutlineMail />
