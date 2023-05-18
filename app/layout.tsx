@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import { BsSunFill } from "react-icons/bs";
 import { RiMoonClearFill } from "react-icons/ri";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata = {
   title: "Josué Makuta | Portfolio",
@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className=" overflow-x-hidden ">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={inter.className}>
+      <body className=" overflow-x-hidden ">{children}</body>
     </html>
   );
 }
