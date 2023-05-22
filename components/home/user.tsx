@@ -9,9 +9,11 @@ import {
   AiFillFacebook,
 } from "react-icons/ai";
 import Link from "next/link";
-import { motion } from "framer-motion";
 
-const SocialMedia = [
+import { useEffect } from "react";
+import { IsocialMediaProps } from "@/type";
+
+const SocialMedia : IsocialMediaProps[] = [
   {
     label: "Twitter",
     icon: <AiFillTwitterCircle size={20} />,
@@ -35,6 +37,8 @@ const SocialMedia = [
 ];
 
 const User = () => {
+  useEffect(() => {});
+
   return (
     <section className=" max-w-[1400px]   h-screen max-h-[1020px] flex justify-center items-center flex-col gap-5 ">
       <section className=" animate-text bg-gradient-to-r absolute top-0  z-0 from-gray-800 dark:from-slate-400 dark:to-orange-400  to-orange-400 w-screen h-[30%] md:h-[35%]"></section>
@@ -47,13 +51,9 @@ const User = () => {
             alt="Profil image"
           />
         </div>
-        <motion.p
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
-        >
+        <p>
           Hello, {"i'm Josh !"} <span className=" ">👋</span>
-        </motion.p>
+        </p>
       </div>
       <h1 className=" text-[2rem] md:text-[2.5rem] w-[85vw] lg:w-[45vw] bg-clip-text bg-gradient-to-r text-transparent from-gray-800 dark:from-white dark:to-my_orange  to-my_orange animate-text leading-tight text-center font-bold  ">
         In order to be irreplaceable, one must always be different.

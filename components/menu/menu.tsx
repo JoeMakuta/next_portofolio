@@ -5,20 +5,11 @@ import { RiCloseLine, RiMenu2Line, RiMoonClearFill } from "react-icons/ri";
 import Link from "next/link";
 import Footer from "../footer/footer";
 import { useState } from "react";
-import { motion } from "framer-motion";
-import { BsSunFill } from "react-icons/bs";
-import { useRecoilState } from "recoil";
-import {
-  Button,
-  Dialog,
-  DialogHeader,
-  DialogBody,
-  DialogFooter,
-  Input,
-  Textarea,
-} from "@material-tailwind/react";
 
-const data = [
+import { BsSunFill } from "react-icons/bs";
+import { ImenuDataProps } from "@/type";
+
+const data: ImenuDataProps[] = [
   {
     name: "Blog",
     link: "#",
@@ -63,10 +54,6 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
   const [darkMode, setDarkMode] = useState(true);
 
   const [open, setOpen] = useState(false);
-  const handleOpen = () => {
-    console.log("Clicked !");
-    setOpen(!open);
-  };
 
   const handleMenu = () => {
     setShowMenu(!showMenu);
@@ -77,10 +64,7 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
       <nav className="   text-dark_bg max-w-[100vw] shadow-md  tracking-tight dark:text-default_color  flex flex-col w-screen fixed top-0 z-20 justify-center bg-[#f0f0f0] dark:bg-dark_bg items-center ">
         <div className="max-w-[1400px]  px-8  w-full bg-inherit dark:bg-dark_bg flex justify-between  py-5 items-center border-b-[1px] dark:border-b-border_color border-b-gray-300  ">
           <div className=" flex justify-center items-center gap-3 ">
-            <div
-              className=" flex justify-center items-center w-7 h-7 md:w-10 md:h-10 rounded-full border-[1px] border-default_color cursor-pointer "
-              onClick={handleOpen}
-            >
+            <div className=" flex justify-center items-center w-7 h-7 md:w-10 md:h-10 rounded-full border-[1px] border-default_color cursor-pointer ">
               <AiOutlineMail />
             </div>
             <div className=" font-bold text-sm md:text-base">Josué Makuta</div>
@@ -105,7 +89,7 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
                 );
               })}
             </div>
-            <div className="flex w-[3rem] justify-center items-center  z-50 ">
+            <div className="flex w-[3rem] hover:bg-gray-300 justify-center items-center  z-50 ">
               {darkMode && (
                 <BsSunFill
                   size={20}
@@ -130,19 +114,11 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
       </nav>
 
       {showMenu && (
-        <motion.nav
-          variants={container}
-          initial="hidden"
-          animate="visible"
-          className=" flex flex-col w-screen h-screen gap-8 fixed top-0 z-20 justify-center items-center  dark:bg-dark_bg bg-opacity-95  "
-        >
-          <motion.div variants={item} className="flex">
+        <nav className=" flex flex-col w-screen h-screen gap-8 fixed top-0 z-20 justify-center items-center  dark:bg-dark_bg bg-opacity-95  ">
+          <div className="flex">
             <RiCloseLine size={23} onClick={handleMenu} />
-          </motion.div>
-          <motion.div
-            variants={item}
-            className="flex flex-col justify-center items-center gap-8 "
-          >
+          </div>
+          <div className="flex flex-col justify-center items-center gap-8 ">
             {data.map((elt, index) => {
               return (
                 <Link href={elt.link} key={index} onClick={handleMenu}>
@@ -150,35 +126,9 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
                 </Link>
               );
             })}
-          </motion.div>
-        </motion.nav>
-      )}
-      <Dialog
-        className="bg-dark_bg text-default_color"
-        open={open}
-        handler={handleOpen}
-      >
-        <div className="flex items-center justify-between">
-          <DialogHeader className=" text-default_color ">
-            New message to makutajosue@gmail.com
-          </DialogHeader>
-          <RiCloseLine className="mr-3 h-5 w-5" onClick={handleOpen} />
-        </div>
-        <DialogBody divider>
-          <div className="grid gap-6">
-            <Input label="Username" />
-            <Textarea label="Message" />
           </div>
-        </DialogBody>
-        <DialogFooter className="space-x-2">
-          <Button variant="outlined" color="red" onClick={handleOpen}>
-            close
-          </Button>
-          <Button variant="gradient" color="green" onClick={handleOpen}>
-            send message
-          </Button>
-        </DialogFooter>
-      </Dialog>
+        </nav>
+      )}
 
       {children}
     </main>

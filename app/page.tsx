@@ -1,3 +1,5 @@
+"use client";
+
 import Footer from "@/components/footer/footer";
 import About from "@/components/home/about";
 import Posts from "@/components/home/posts";
@@ -14,7 +16,7 @@ export default function Home() {
         <User />
         <About />
         <Projects />
-        {/* <Posts /> */}
+        <Posts />
         <Footer />
       </main>
     </Menu>
