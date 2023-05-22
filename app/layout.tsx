@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import { BsSunFill } from "react-icons/bs";
 import { RiMoonClearFill } from "react-icons/ri";
 
-const inter = Inter({ subsets: ["latin"], display: "swap" });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Josué Makuta | Portfolio",
