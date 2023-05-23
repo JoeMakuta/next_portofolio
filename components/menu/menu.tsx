@@ -12,46 +12,21 @@ import { ImenuDataProps } from "@/type";
 const data: ImenuDataProps[] = [
   {
     name: "Blog",
-    link: "#",
+    link: "https://medium.com/@makutajosue",
   },
   {
     name: "GitHub",
-    link: "#",
+    link: "http://github.com/JoeMakuta",
   },
   {
     name: "LinkedIn",
-    link: "#",
-  },
-  {
-    name: "LinkedIn",
-    link: "#",
+    link: "https://www.linkedin.com/in/josuemakuta/",
   },
 ];
 
-export const container = {
-  hidden: { opacity: 1, scale: 1, y: -100 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    y: 0,
-    transition: {
-      delayChildren: 0.1,
-      staggerChildren: 0.2,
-    },
-  },
-};
-
-export const item = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-  },
-};
-
 const Menu = ({ children }: { children: React.ReactNode }) => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState<boolean>(true);
 
   const [open, setOpen] = useState(false);
 
@@ -80,6 +55,7 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
                     className=" hover:font-bold "
                     href={elt.link}
                     key={index}
+                    target="__blank"
                   >
                     {elt.name}
                     {!(index == data.length - 1) && (

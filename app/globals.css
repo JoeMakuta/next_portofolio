@@ -4,20 +4,36 @@
 
 @layer base {
   .myCrool::-webkit-scrollbar {
-    width: 0px;
+    width: 10px;
+    height: 2px;
   }
 
-  /* .myCrool::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  .myCrool::-webkit-scrollbar-track {
+    background: #252525;
   }
 
-  
   .myCrool::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #a5a5a5;
   }
 
- 
   .myCrool::-webkit-scrollbar-thumb:hover {
     background: #555;
-  } */
+  }
+
+  .myCrool1::-webkit-scrollbar {
+    width: 10px;
+    height: 2px;
+  }
+
+  .myCrool1::-webkit-scrollbar-track {
+    background: #f8f8f8;
+  }
+
+  .myCrool1::-webkit-scrollbar-thumb {
+    background: #969696;
+  }
+
+  .myCrool1::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 }

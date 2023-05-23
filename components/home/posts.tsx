@@ -11,7 +11,7 @@ const Posts = () => {
   const getData = async () => {
     const options = {
       method: "GET",
-      url: "https://himalayas.app/jobs/api?limit=10&offset=10",
+      url: "https://himalayas.app/jobs/api?limit=50&offset=10",
     };
 
     try {
@@ -30,9 +30,9 @@ const Posts = () => {
   }, []);
 
   return (
-    <section className=" dark:bg-dark_bg w-screen  flex flex-col max-w-[1400px] p-6 border-t-[1px] py-10 dark:border-t-border_color border-t-gray-300 ">
-      <h1 className=" font-bold ">Find remote jobs</h1>
-      <div className=" myCrool flex justify-between gap-6 max-w-[1400px] overflow-y-hidden  flex-wrap w-[98vw]  p-6    ">
+    <section className=" dark:bg-dark_bg w-screen   flex flex-col justify-center items-center p-6 border-t-[1px] py-10 dark:border-t-border_color border-t-gray-300 ">
+      <h1 className=" font-bold max-w-[1400px] ">Find remote jobs</h1>
+      <div className=" dark:myCrool myCrool1 flex justify-between gap-6  overflow-y-hidden  flex-wrap w-[100vw] md:w-[98vw]  p-6">
         <div className=" flex gap-4  ">
           {jobs?.jobs.map((elt, index) => {
             return (
@@ -58,10 +58,12 @@ const Posts = () => {
 
                 <div className=" flex gap-2 text-sm flex-col ">
                   <p>Location : Remote</p>
-                  <h1 className="text-sm">{elt.excerpt}</h1>
+                  <h1 className="text-sm">
+                    {elt.excerpt.substring(0, 100)} ...
+                  </h1>
                 </div>
                 <Link
-                  className="font-bold w-[7rem] bg-green-600 flex justify-center items-center h-10 rounded-lg "
+                  className="w-[6rem] py-2 px-2 text-center text-sm font-medium tracking-wider text-white transition-colors duration-300 transform  focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80"
                   href={elt.applicationLink}
                   target="__blank"
                 >
