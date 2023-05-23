@@ -14,6 +14,7 @@ module.exports = {
       },
       colors: {
         dark_bg: "#161616",
+        my_gray: "#252525",
         default_color: "#DBDBDB",
         border_color: "#575757",
         my_orange: "#FEA13B",

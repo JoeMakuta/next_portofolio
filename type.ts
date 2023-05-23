@@ -24,3 +24,28 @@ export interface IaboutDetailsProps{
    name: string, 
    link: string,
  }
+
+ export interface IapiResponseProps {
+   
+   jobs : {
+      applicationLink:string,
+      categories:  Array<string>,
+      companyLogo:string,
+      companyName :string,
+      description : string,
+      excerpt : string,
+      expiryDate: number,
+      guid: string,
+      image : string,
+      locationRestrictions:string[],
+      parentCategories:string[],
+      pubDate : number,
+      timezoneRestrictions : number[],
+      title:string,
+   }[],
+
+   limit : number,
+   offset : number,
+   total_count : number,
+   updated_at : number
+ }

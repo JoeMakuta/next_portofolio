@@ -61,7 +61,7 @@ const About = () => {
               {!collapse ? " Read more" : " Show less"}
             </button>
           </div>
-          <div className=" flex flex-wrap md:flex-row flex-col gap-4 justify-around  bg-gray-400 dark:bg-gray-900 bg-opacity-30 rounded-md p-4">
+          <div className=" flex flex-wrap md:flex-row flex-col gap-4 justify-around  bg-gray-400 dark:bg-my_gray bg-opacity-30 rounded-md p-4">
             <div className=" flex flex-col gap-2 ">
               <p className=" text-gray-500 ">Location : </p>
               <a href="https://goo.gl/maps/dVoVkKAKDjyzurbs8">

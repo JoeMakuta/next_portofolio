@@ -89,7 +89,7 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
                 );
               })}
             </div>
-            <div className="flex w-[3rem] hover:bg-gray-300 justify-center items-center  z-50 ">
+            <div className="flex w-[3rem] hover:scale-110 transition-all justify-center items-center  z-50 ">
               {darkMode && (
                 <BsSunFill
                   size={20}

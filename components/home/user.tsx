@@ -13,7 +13,7 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { IsocialMediaProps } from "@/type";
 
-const SocialMedia : IsocialMediaProps[] = [
+const SocialMedia: IsocialMediaProps[] = [
   {
     label: "Twitter",
     icon: <AiFillTwitterCircle size={20} />,
