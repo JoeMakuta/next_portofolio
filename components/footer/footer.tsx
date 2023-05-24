@@ -96,8 +96,8 @@ const Footer = () => {
             </div>
           </a>
 
-          <div className="flex -mx-2">
-            <div className=" flex gap-5">
+          <div className="flex mx-2">
+            <div className=" flex gap-2 md:gap-5">
               {SocialMedia.map((elt, index) => {
                 return (
                   <div key={index}>
