@@ -84,7 +84,7 @@ const About = () => {
                 ✉️ makutajosue@gmail.com
               </a>
             </div>
-            <div className=" flex flex-col gap-2 ">
+            <div id="projects" className=" flex flex-col gap-2 ">
               <p className="  text-gray-500">Phone : </p>
               <a href="tel:+243972383759" className="  ">
                 📞 +243 972 383 759

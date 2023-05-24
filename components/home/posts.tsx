@@ -68,7 +68,7 @@ const Posts = () => {
             jobs?.jobs.map((elt, index) => {
               return (
                 <div
-                  className=" flex flex-col box-border w-[25em]  gap-3 max-h-[13rem] p-4 justify-between rounded-md dark:bg-my_gray bg-slate-200 "
+                  className=" flex flex-col box-border w-[25em]  gap-3 max-h-[13rem] p-4 justify-between rounded-xl dark:bg-my_gray bg-white "
                   key={index}
                 >
                   <div className="flex gap-2 justify-start items-center">

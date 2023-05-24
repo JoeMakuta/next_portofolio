@@ -59,7 +59,7 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
                   >
                     {elt.name}
                     {!(index == data.length - 1) && (
-                      <span className=" font-light pl-4">|</span>
+                      <span className=" font-light pl-4">/</span>
                     )}
                   </Link>
                 );

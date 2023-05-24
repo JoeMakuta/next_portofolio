@@ -12,36 +12,30 @@ const projects: IprojectProps[] = [
     githubLink: "https://github.com/JoeMakuta/Quiz_App/",
     liveLink: "https://joemakuta.github.io/Quiz_App/",
   },
+
   {
-    title: "Quiz App",
+    title: "Programiz-Pro Clone",
     description:
-      "I have experience working with various programming languages such as HTML, CSS, and JavaScript. I am also proficient in using popular web development frameworks like React, Next.js, and ExpressJs.My expertise lies in developing responsive and user-friendly websites that are optimized for performance and search engines.",
+      "This is the clone of the official site of Programiz pro. So far, it has no functionality, this is just the design performed for learning purposes.",
     images: ["link1", "link2", "link3"],
-    githubLink: "#",
-    liveLink: "#",
+    githubLink: "https://github.com/JoeMakuta/Programiz-Pro",
+    liveLink: "https://joemakuta.github.io/Programiz-Pro/",
   },
   {
-    title: "Quiz App",
+    title: "World Weather App",
     description:
-      "I have experience working with various programming languages such as HTML, CSS, and JavaScript. I am also proficient in using popular web development frameworks like React, Next.js, and ExpressJs.My expertise lies in developing responsive and user-friendly websites that are optimized for performance and search engines.",
+      "World Weather App is a professional and reliable application that provides accurate and up-to-date weather information for any location in the world. You can easily access city  weather and more with just a search.  Whether you are planning a trip, checking the weather for your daily commute, or simply want to stay informed, World Weather App is the best choice for you.",
     images: ["link1", "link2", "link3"],
-    githubLink: "#",
-    liveLink: "#",
+    githubLink: "https://github.com/JoeMakuta/Weather_api",
+    liveLink: "https://weather-api-teal.vercel.app/",
   },
+
   {
-    title: "Quiz App",
+    title: "M-Tech App Backend",
     description:
-      "I have experience working with various programming languages such as HTML, CSS, and JavaScript. I am also proficient in using popular web development frameworks like React, Next.js, and ExpressJs.My expertise lies in developing responsive and user-friendly websites that are optimized for performance and search engines.",
+      "The M-Tech app is an professional web service for storing and management purposes. It allows the user to store and manage everything about renting.",
     images: ["link1", "link2", "link3"],
-    githubLink: "#",
-    liveLink: "#",
-  },
-  {
-    title: "Quiz App",
-    description:
-      "I have experience working with various programming languages such as HTML, CSS, and JavaScript. I am also proficient in using popular web development frameworks like React, Next.js, and ExpressJs.My expertise lies in developing responsive and user-friendly websites that are optimized for performance and search engines.",
-    images: ["link1", "link2", "link3"],
-    githubLink: "#",
+    githubLink: "https://github.com/JoeMakuta/M-Tech",
     liveLink: "#",
   },
 ];

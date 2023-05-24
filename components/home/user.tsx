@@ -58,9 +58,12 @@ const User = () => {
       <h1 className=" text-[2rem] md:text-[2.5rem] w-[85vw] lg:w-[45vw] bg-clip-text bg-gradient-to-r text-transparent from-gray-800 dark:from-white dark:to-my_orange  to-my_orange animate-text leading-tight text-center font-bold  ">
         In order to be irreplaceable, one must always be different.
       </h1>
-      <button  className=" dark:bg-dark_bg bg-white transition-all   border-border_color border-[1px] w-[10em] md:w-[15em] flex justify-center items-center gap-2 h-14 rounded-md hover:bg-orange-400 ">
+      <a
+        href="#projects"
+        className=" dark:bg-dark_bg bg-white transition-all   border-border_color border-[1px] w-[10em] md:w-[15em] flex justify-center items-center gap-2 h-14 rounded-md hover:bg-orange-400 "
+      >
         <p>Latest Projects</p>
-      </button>
+      </a>
       <div className=" flex gap-5 absolute bottom-10">
         {SocialMedia.map((elt, index) => {
           return (
