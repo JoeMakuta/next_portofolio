@@ -90,7 +90,7 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
       </nav>
 
       {showMenu && (
-        <nav className=" flex flex-col w-screen h-screen gap-8 fixed top-0 z-20 justify-center items-center  dark:bg-dark_bg bg-opacity-95  ">
+        <nav className=" flex flex-col w-screen h-screen gap-8 dark:text-white bg-gray-200 fixed top-0 z-20 justify-center items-center  dark:bg-dark_bg bg-opacity-95  ">
           <div className="flex">
             <RiCloseLine size={23} onClick={handleMenu} />
           </div>
@@ -102,6 +102,28 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
                 </Link>
               );
             })}
+          </div>
+          <div className="flex w-[3rem] hover:scale-110 transition-all justify-center items-center  z-50 ">
+            {darkMode && (
+              <BsSunFill
+                size={20}
+                className=" cursor-pointer "
+                onClick={() => {
+                  setDarkMode(false);
+                  handleMenu();
+                }}
+              />
+            )}
+            {!darkMode && (
+              <RiMoonClearFill
+                size={20}
+                className="cursor-pointer"
+                onClick={() => {
+                  setDarkMode(true);
+                  handleMenu();
+                }}
+              />
+            )}
           </div>
         </nav>
       )}
