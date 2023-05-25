@@ -39,9 +39,12 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
       <nav className="   text-dark_bg max-w-[100vw] shadow-md  tracking-tight dark:text-default_color  flex flex-col w-screen fixed top-0 z-20 justify-center bg-[#f0f0f0] dark:bg-dark_bg items-center ">
         <div className="max-w-[1400px]  px-8  w-full bg-inherit dark:bg-dark_bg flex justify-between  py-5 items-center border-b-[1px] dark:border-b-border_color border-b-gray-300  ">
           <div className=" flex justify-center items-center gap-3 ">
-            <div className=" flex justify-center items-center w-7 h-7 md:w-10 md:h-10 rounded-full border-[1px] border-default_color cursor-pointer ">
+            <a
+              href="mailto:makutajosue@gmail.com"
+              className=" flex justify-center items-center w-7 h-7 md:w-10 md:h-10 rounded-full border-[1px] border-default_color cursor-pointer "
+            >
               <AiOutlineMail />
-            </div>
+            </a>
             <div className=" font-bold text-sm md:text-base">Josué Makuta</div>
           </div>
           <div className=" flex md:hidden ">
@@ -90,7 +93,7 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
       </nav>
 
       {showMenu && (
-        <nav className=" flex flex-col w-screen h-screen gap-8 dark:text-white bg-gray-200 fixed top-0 z-20 justify-center items-center  dark:bg-dark_bg bg-opacity-95  ">
+        <nav className=" flex flex-col w-screen h-screen gap-8 dark:text-white bg-gray-200 fixed top-0 z-20 justify-center items-center  dark:bg-dark_bg">
           <div className="flex">
             <RiCloseLine size={23} onClick={handleMenu} />
           </div>

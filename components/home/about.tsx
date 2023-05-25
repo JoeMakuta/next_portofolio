@@ -1,6 +1,7 @@
 "use client";
 import { IaboutDetailsProps } from "@/type";
 import { collectAppConfig } from "next/dist/build/utils";
+import Link from "next/link";
 import { useState } from "react";
 
 const details: IaboutDetailsProps[] = [
@@ -64,31 +65,31 @@ const About = () => {
           <div className=" flex flex-wrap md:flex-row flex-col gap-4 justify-around  bg-gray-400 dark:bg-my_gray bg-opacity-30 rounded-md p-4">
             <div className=" flex flex-col gap-2 ">
               <p className=" text-gray-500 ">Location : </p>
-              <a href="https://goo.gl/maps/dVoVkKAKDjyzurbs8">
+              <Link href="https://goo.gl/maps/dVoVkKAKDjyzurbs8">
                 {" "}
                 🌍 DRC, North-Kivu
-              </a>
+              </Link>
             </div>
             <div className=" flex flex-col gap-2 ">
               <p className=" text-gray-500 ">WebSite : </p>
-              <a href="#" className=" text-blue-400  ">
+              <Link href="#" className=" text-blue-400  ">
                 🌍 Josue Makuta
-              </a>
+              </Link>
             </div>
             <div className=" flex flex-col gap-2 ">
               <p className=" text-gray-500 ">Email : </p>
-              <a
+              <Link
                 href="mailto:makutajosue@gmail.com"
                 className=" text-blue-400  "
               >
                 ✉️ makutajosue@gmail.com
-              </a>
+              </Link>
             </div>
             <div id="projects" className=" flex flex-col gap-2 ">
               <p className="  text-gray-500">Phone : </p>
-              <a href="tel:+243972383759" className="  ">
+              <Link href="tel:+243972383759" className="  ">
                 📞 +243 972 383 759
-              </a>
+              </Link>
             </div>
           </div>
         </div>

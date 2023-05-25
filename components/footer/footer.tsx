@@ -87,9 +87,12 @@ const Footer = () => {
         <div className="flex items-center justify-between">
           <a href="#">
             <div className=" flex justify-center items-center gap-3 ">
-              <div className=" flex justify-center items-center w-7 h-7 md:w-10 md:h-10 rounded-full border-[1px] border-default_color cursor-pointer ">
+              <a
+                href="mailto:makutajosue@gmail.com"
+                className=" flex justify-center items-center w-7 h-7 md:w-10 md:h-10 rounded-full border-[1px] border-default_color cursor-pointer "
+              >
                 <AiOutlineMail />
-              </div>
+              </a>
               <div className=" font-bold text-sm md:text-base">
                 Josué Makuta
               </div>
