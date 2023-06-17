@@ -4,7 +4,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { RiCloseLine, RiMenu2Line, RiMoonClearFill } from "react-icons/ri";
 import Link from "next/link";
 import Footer from "../footer/footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { BsSunFill } from "react-icons/bs";
 import { ImenuDataProps } from "@/type";
@@ -26,13 +26,24 @@ const data: ImenuDataProps[] = [
 
 const Menu = ({ children }: { children: React.ReactNode }) => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
-  const [darkMode, setDarkMode] = useState<boolean>(true);
+  const [darkMode, setDarkMode] = useState<boolean>();
 
   const [open, setOpen] = useState(false);
 
   const handleMenu = () => {
+    console.log(window);
+    localStorage.setItem("darkMode", JSON.stringify(!showMenu));
     setShowMenu(!showMenu);
   };
+
+  // useEffect(() => {
+  //   const localDarkMode: boolean = JSON.parse(localStorage.getItem("darkMode"));
+  //   if (localDarkMode) {
+  //     setDarkMode(localDarkMode);
+  //   } else {
+  //     setDarkMode(false);
+  //   }
+  // }, [darkMode]);
 
   return (
     <main
