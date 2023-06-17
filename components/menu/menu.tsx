@@ -35,7 +35,11 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
   };
 
   return (
-    <main className={darkMode ? "dark" : "light"}>
+    <main
+      className={`flex flex-col justify-between min-h-screen ${
+        darkMode ? "dark" : "light"
+      }`}
+    >
       <nav className="   text-dark_bg max-w-[100vw] shadow-md  tracking-tight dark:text-default_color  flex flex-col w-screen fixed top-0 z-20 justify-center bg-[#f0f0f0] dark:bg-dark_bg items-center ">
         <div className="max-w-[1400px]  px-8  w-full bg-inherit dark:bg-dark_bg flex justify-between  py-5 items-center border-b-[1px] dark:border-b-border_color border-b-gray-300  ">
           <div className=" flex justify-center items-center gap-3 ">
@@ -131,7 +135,8 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
         </nav>
       )}
 
-      {children}
+      <div className=" mt-20 ">{children}</div>
+      <Footer />
     </main>
   );
 };

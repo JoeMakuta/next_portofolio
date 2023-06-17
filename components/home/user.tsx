@@ -40,9 +40,9 @@ const User = () => {
   useEffect(() => {});
 
   return (
-    <section className=" max-w-[1400px]   h-screen max-h-[1020px] flex justify-center items-center flex-col gap-5 ">
-      <section className=" animate-text bg-gradient-to-r absolute top-0  z-0 from-gray-800 dark:from-slate-400 dark:to-orange-400  to-orange-400 w-screen h-[30%] md:h-[35%]"></section>
-      <div className=" flex justify-center z-10 items-center gap-2 flex-col ">
+    <section className=" max-w-[1400px]   h-[90vh] min-h-[500px] max-h-[1020px] flex justify-center items-center flex-col gap-10 md:gap-5 ">
+      <section className=" animate-text bg-gradient-to-r absolute top-0  z-0 from-gray-800 dark:from-slate-400 dark:to-orange-400  to-orange-400 w-screen h-[30%] min-h-[200px] md:h-[35%]"></section>
+      <div className=" flex justify-center z-10 items-center gap-5 flex-col ">
         <div className="overflow-hidden w-[7em] h-[7em] rounded-full ">
           <Image
             src="/asserts/profil_pic1.jpg"

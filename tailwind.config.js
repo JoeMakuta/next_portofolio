@@ -22,6 +22,7 @@ module.exports = {
       animation: {
         text: "text 5s ease infinite",
         background: "background 50s ease infinite",
+        carousel: "carousel 100s ease infinite",
       },
       keyframes: {
         text: {
@@ -47,6 +48,14 @@ module.exports = {
             "background-position": "top",
           },
         },
+        // carousel: {
+        //   "0%": {
+        //     transform: "translateZ(0)",
+        //   },
+        //   "100%": {
+        //     transform: "translate3d(calc(100% / 50 * -1),0,0)",
+        //   },
+        // },
       },
     },
   },

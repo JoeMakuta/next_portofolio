@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { AiOutlineMail } from "react-icons/ai";
 import { SocialMedia } from "../home/user";
@@ -5,7 +7,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-white w-[100vw] dark:bg-my_gray">
+    <footer className="bg-white w-[100vw] dark:text-white  bottom-0  dark:bg-my_gray">
       <div className="container px-6 py-12 mx-auto">
         <div className="flex justify-center items-center ">
           <div className="sm:col-span-2">

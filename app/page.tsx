@@ -17,7 +17,6 @@ export default function Home() {
         <About />
         <Projects />
         <Posts />
-        <Footer />
       </main>
     </Menu>
   );
