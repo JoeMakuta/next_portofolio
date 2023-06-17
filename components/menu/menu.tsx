@@ -31,19 +31,17 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
   const [open, setOpen] = useState(false);
 
   const handleMenu = () => {
-    console.log(window);
-    localStorage.setItem("darkMode", JSON.stringify(!showMenu));
     setShowMenu(!showMenu);
   };
 
-  // useEffect(() => {
-  //   const localDarkMode: boolean = JSON.parse(localStorage.getItem("darkMode"));
-  //   if (localDarkMode) {
-  //     setDarkMode(localDarkMode);
-  //   } else {
-  //     setDarkMode(false);
-  //   }
-  // }, [darkMode]);
+  const handleDarkMode = () => {
+    localStorage.setItem("darkMode", JSON.stringify(!darkMode));
+    setDarkMode(!darkMode);
+  };
+
+  useEffect(() => {
+    setDarkMode(JSON.parse(localStorage.getItem("darkMode")) || false);
+  }, []);
 
   return (
     <main
@@ -88,18 +86,14 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
                 <BsSunFill
                   size={20}
                   className=" cursor-pointer "
-                  onClick={() => {
-                    setDarkMode(false);
-                  }}
+                  onClick={handleDarkMode}
                 />
               )}
               {!darkMode && (
                 <RiMoonClearFill
                   size={20}
                   className="cursor-pointer"
-                  onClick={() => {
-                    setDarkMode(true);
-                  }}
+                  onClick={handleDarkMode}
                 />
               )}
             </div>
