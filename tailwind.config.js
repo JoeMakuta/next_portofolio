@@ -17,7 +17,7 @@ module.exports = {
         my_gray: "#252525",
         default_color: "#DBDBDB",
         border_color: "#575757",
-        my_orange: "#FEA13B",
+        my_orange: "#5DFC6C",
       },
       animation: {
         text: "text 5s ease infinite",
