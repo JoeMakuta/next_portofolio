@@ -36,7 +36,7 @@ const projects: IprojectProps[] = [
       "The M-Tech app is an professional web service for storing and management purposes. It allows the user to store and manage everything about renting.",
     images: ["link1", "link2", "link3"],
     githubLink: "https://github.com/JoeMakuta/M-Tech",
-    liveLink: "#",
+    liveLink: "",
   },
 ];
 
@@ -49,26 +49,38 @@ const Projects = () => {
           {projects.map((elt, index) => {
             return (
               <div
-                className=" bg-white dark:bg-inherit flex flex-col gap-2 border-[1px] dark:border-border_color  md:w-[30%] first-line:border-gray-300  hover:bg-gray-500 transition-all hover:bg-opacity-30 rounded-xl p-4 "
+                className=" bg-white bg-gradient-to-tr from-white dark:from-black dark:to-my_orange/50  to-my_orange flex flex-col gap-2   md:w-[30%] first-line:border-gray-300  hover:bg-gray-500 animate-text transition-all hover:bg-opacity-30 rounded-xl p-4 cursor-pointer"
                 key={index}
               >
                 <h1 className=" font-bold ">{elt.title}</h1>
-                <p className=" border-t-[1px] text-gray-500 dark:text-gray-300 border-border_color pt-2 ">
+                <p className=" border-t-[1px] text-gray-700 dark:text-gray-100  border-white pt-2 ">
                   {elt.description.substring(0, 100) + " ..."}
                 </p>
                 <div className=" flex self-end gap-3 ">
-                  <Link href={elt.liveLink} target="__blank">
-                    <RxExternalLink
-                      size={15}
-                      className=" cursor-pointer text-gray-500 hover:text-gray-800 transition-all "
-                    />
-                  </Link>
-                  <Link href={elt.githubLink} target="__blank">
-                    <AiFillGithub
-                      size={15}
-                      className="cursor-pointer text-gray-500 hover:text-gray-800 transition-all"
-                    />
-                  </Link>
+                  {elt.liveLink !== "" && (
+                    <Link
+                      href={elt.liveLink}
+                      title="Demo Link"
+                      target="__blank"
+                    >
+                      <RxExternalLink
+                        size={15}
+                        className=" cursor-pointer text-gray-500 dark:text-white hover:text-gray-800 transition-all "
+                      />
+                    </Link>
+                  )}
+                  {elt.githubLink !== "" && (
+                    <Link
+                      title="Github Link"
+                      href={elt.githubLink}
+                      target="__blank"
+                    >
+                      <AiFillGithub
+                        size={15}
+                        className="cursor-pointer dark:text-white text-gray-500 hover:text-gray-800 transition-all"
+                      />
+                    </Link>
+                  )}
                 </div>
               </div>
             );
