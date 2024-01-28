@@ -69,11 +69,10 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
             <div className=" hidden text-sm md:flex gap-4 ">
               {data.map((elt, index) => {
                 return (
-                  <div>
+                  <div key={index}>
                     <Link
                       className=" hover:text-gray-400 transition-all font-bold "
                       href={elt.link}
-                      key={index}
                       target="__blank"
                     >
                       {elt.name}
