@@ -10,7 +10,7 @@ const PostLoader = () => {
     <div className="py-2 rounded  w-60 sm:w-[28em] animate-pulse dark:bg-my_gray bg-white">
       <div className="flex p-2 space-x-4 sm:px-8">
         <div className="flex-shrink-0 w-16 h-16 rounded-full dark:bg-gray-900 bg-gray-200"></div>
-        <div className="flex-1 py-2 space-y-2">
+        <div className="flex py-2 space-y-2">
           <div className="w-full h-3 rounded dark:bg-gray-900 bg-gray-200"></div>
           <div className="w-5/6 h-3 rounded dark:bg-gray-900 bg-gray-200"></div>
         </div>
