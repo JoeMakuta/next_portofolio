@@ -40,7 +40,9 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
   };
 
   useEffect(() => {
-    setDarkMode(JSON.parse(localStorage.getItem("darkMode")) || false);
+    setDarkMode(
+      JSON.parse(localStorage.getItem("darkMode") as string) || false
+    );
   }, []);
 
   return (
