@@ -12,6 +12,7 @@ import Link from "next/link";
 
 import { useEffect } from "react";
 import { IsocialMediaProps } from "@/type";
+import { useTheme } from "next-themes";
 
 export const SocialMedia: IsocialMediaProps[] = [
   {
@@ -38,6 +39,7 @@ export const SocialMedia: IsocialMediaProps[] = [
 
 const User = () => {
   useEffect(() => {});
+  const { theme, setTheme } = useTheme();
 
   return (
     <section className=" max-w-[1400px]   h-[90vh] min-h-[500px] max-h-[1020px] flex justify-center items-center flex-col gap-10 md:gap-5 ">
@@ -45,10 +47,15 @@ const User = () => {
       <div className=" flex justify-center z-10 items-center gap-5 flex-col ">
         <div className="overflow-hidden w-[7em] h-[7em] rounded-full ">
           <Image
-            src="/asserts/profil_pic1.jpg"
+            src={
+              theme == "light"
+                ? "/asserts/profil_pic2.jpg"
+                : "/asserts/profil_pic1.jpg"
+            }
             width={400}
             height={400}
             alt="Profil image"
+            className="filter: grayscale(100%)"
           />
         </div>
         <p>
