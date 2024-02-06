@@ -33,13 +33,6 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
     setShowMenu(!showMenu);
   };
 
-  useEffect(() => {
-    // setDarkMode(
-    //   JSON.parse(localStorage.getItem("darkMode") as string) || false
-    // );
-    // console.log(theme);
-  }, []);
-
   return (
     <ThemeProvider defaultTheme="light" attribute="class">
       <main className={`flex flex-col justify-between min-h-screen`}>
