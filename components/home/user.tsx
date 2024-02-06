@@ -55,7 +55,7 @@ const User = () => {
             width={400}
             height={400}
             alt="Profil image"
-            className="filter: grayscale(100%)"
+            className="transition-all"
           />
         </div>
         <p>
