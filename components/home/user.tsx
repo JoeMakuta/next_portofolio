@@ -67,7 +67,7 @@ const User = () => {
       </h1>
       <a
         href="#projects"
-        className=" dark:bg-dark_bg bg-white transition-all   border-border_color border-[1px] w-[10em] md:w-[15em] flex justify-center items-center gap-2 h-14 rounded-md hover:scale-105 "
+        className=" dark:bg-dark_bg bg-white transition-all animate-text bg-gradient-to-bl  from-white dark:from-slate-400 dark:to-my_orange  to-my_orange    w-[10em] md:w-[15em] flex justify-center items-center dark:text-black gap-2 h-14 rounded-md hover:scale-105 "
       >
         <p>Latest Projects</p>
       </a>
