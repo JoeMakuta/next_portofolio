@@ -6,6 +6,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "cdn-images.himalayas.app",
       },
+      {
+        protocol: "https",
+        hostname: "ui-avatars.com",
+      },
     ],
   },
 };
