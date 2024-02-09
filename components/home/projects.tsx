@@ -87,7 +87,7 @@ const projects: IprojectProps[] = [
 ];
 
 const Projects = () => {
-  const [showMore, setShowMore] = useState<boolean>(true);
+  const [showMore, setShowMore] = useState<boolean>(false);
   return (
     <section className=" dark:bg-dark_bg w-screen  flex justify-center items-center ">
       <div className=" flex justify-between gap-6 max-w-[1400px] flex-wrap w-[98vw]  p-6 border-t-[1px] py-10 dark:border-t-border_color border-t-gray-300   ">

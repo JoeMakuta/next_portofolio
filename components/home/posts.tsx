@@ -96,7 +96,7 @@ const Posts = () => {
                     </h1>
                   </div>
                   <Link
-                    className="w-[30%] py-2 px-2 text-center text-sm font-medium tracking-wider text-white transition-colors duration-300 transform  focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80"
+                    className="transition-all animate-text bg-gradient-to-bl  from-white dark:from-slate-400 dark:to-my_orange  to-my_orange hover:scale-105  w-[30%] py-2 px-2 text-center text-sm font-medium tracking-wider text-white  duration-300 transform  focus:outline-none rounded-md focus:ring focus:ring-gray-300 focus:ring-opacity-80"
                     href={elt.applicationLink}
                     target="__blank"
                   >

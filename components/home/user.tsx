@@ -42,7 +42,7 @@ const User = () => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <section className=" max-w-[1400px]   h-[90vh] min-h-[500px] max-h-[1020px] flex justify-center items-center flex-col gap-10 md:gap-5 ">
+    <section className=" max-w-[1400px]   h-[90vh] min-h-[500px] max-h-[800px] flex justify-center items-center flex-col gap-10 md:gap-5 ">
       <section className=" animate-text bg-gradient-to-bl absolute top-0  z-0 from-white dark:from-slate-400 dark:to-my_orange  to-my_orange w-screen h-[30%] min-h-[200px] md:h-[35%]"></section>
       <div className=" flex justify-center z-10 items-center gap-5 flex-col ">
         <div className="overflow-hidden w-[7em] h-[7em] rounded-full ">
@@ -67,11 +67,11 @@ const User = () => {
       </h1>
       <a
         href="#projects"
-        className=" dark:bg-dark_bg bg-white transition-all animate-text bg-gradient-to-bl  from-white dark:from-slate-400 dark:to-my_orange  to-my_orange    w-[10em] md:w-[15em] flex justify-center items-center dark:text-black gap-2 h-14 rounded-md hover:scale-105 "
+        className=" transition-all animate-text bg-gradient-to-bl  from-white dark:from-slate-400 dark:to-my_orange  to-my_orange    w-[10em] md:w-[15em] flex justify-center items-center dark:text-black gap-2 h-14 rounded-md hover:scale-105 "
       >
         <p>Latest Projects</p>
       </a>
-      <div className=" flex gap-5 absolute bottom-10">
+      <div className=" flex gap-5 absolute bottom-1 md:bottom-10">
         {SocialMedia.map((elt, index) => {
           return (
             <div key={index}>
