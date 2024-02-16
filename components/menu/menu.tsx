@@ -34,24 +34,21 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
   };
 
   return (
-    <ThemeProvider defaultTheme="light" attribute="class">
+    <ThemeProvider attribute="class">
       <main className={`flex flex-col justify-between min-h-screen`}>
         <nav className="   text-dark_bg max-w-[100vw] shadow-md  tracking-tight dark:text-default_color  flex flex-col w-screen fixed top-0 z-20 justify-center bg-[#f0f0f0] dark:bg-dark_bg items-center ">
           <div className="max-w-[1400px]  px-8  w-full bg-inherit dark:bg-dark_bg flex justify-between  py-5 items-center border-b-[1px] dark:border-b-border_color border-b-gray-300  ">
-            <Link
-              href={"/"}
-              className=" flex justify-center items-center gap-3 "
-            >
+            <div className=" flex justify-center items-center gap-3 ">
               <a
                 href="mailto:makutajosue@gmail.com"
                 className=" flex justify-center items-center w-7 h-7 md:w-10 md:h-10 rounded-full border-[1px] border-default_color cursor-pointer "
               >
-                <AiOutlineMail />
+                <AiOutlineMail />{" "}
               </a>
-              <div className=" font-bold text-sm md:text-base">
+              <Link href={"/"} className=" font-bold text-sm md:text-base">
                 Josué Makuta
-              </div>
-            </Link>
+              </Link>
+            </div>
             <div className=" flex md:hidden cursor-pointer ">
               <RiMenu2Line size={23} onClick={handleMenu} />
             </div>
@@ -74,7 +71,7 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
                   );
                 })}
               </div>
-              <Theme />
+              <Theme setShowMenu={setShowMenu} />
               {/* <div>
                 <input
                   className="border-none bg-inherit rounded-full p-0 w-7 h-7"
@@ -99,7 +96,7 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
                 );
               })}
             </div>
-            <Theme />
+            <Theme setShowMenu={setShowMenu} />
           </nav>
         )}
 
