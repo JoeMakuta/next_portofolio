@@ -18,7 +18,7 @@ export const SocialMedia: IsocialMediaProps[] = [
   {
     label: "Twitter",
     icon: <AiFillTwitterCircle size={20} />,
-    link: "https://twitter.com/MakutaJosue",
+    link: "https://twitter.com/JosueMakuta",
   },
   {
     label: "LinkedIn",
