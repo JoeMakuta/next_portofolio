@@ -18,12 +18,7 @@ const Theme = ({
   return (
     <div className="flex w-[3rem] gap-2  transition-all justify-center items-center  z-50 ">
       {/* {theme == "dark" && ( */}
-      <BsSunFill
-        title="Light theme"
-        size={20}
-        className=" cursor-pointer hover:scale-110 transition-all"
-        onClick={() => handleTheme("light")}
-      />
+
       {/* )} */}
       {/* {theme == "light" && ( */}
       <RiMoonClearFill
@@ -31,6 +26,12 @@ const Theme = ({
         size={20}
         className="cursor-pointer hover:scale-110 transition-all"
         onClick={() => handleTheme("dark")}
+      />
+      <BsSunFill
+        title="Light theme"
+        size={20}
+        className=" cursor-pointer hover:scale-110 transition-all"
+        onClick={() => handleTheme("light")}
       />
 
       {/* )} */}
