@@ -43,12 +43,12 @@ const User = () => {
 
   return (
     <section className=" max-w-[1400px]   h-[90vh] min-h-[500px] max-h-[800px] flex justify-center items-center flex-col gap-10 md:gap-5 ">
-      <section className=" animate-text bg-gradient-to-bl absolute top-0  z-0 from-white dark:from-slate-400 dark:to-my_orange  to-my_orange w-screen h-[30%] min-h-[200px] md:h-[35%]">
-        <img
+      <section className=" bg-opacity-20 animate-text bg-gradient-to-bl absolute top-0  z-0 from-white dark:from-slate-400 dark:to-my_orange  to-my_orange w-screen h-[30%] min-h-[200px] md:h-[35%]">
+        {/* <img
           src={"/asserts/background_image.jpg"}
           className=" opacity-10 "
           alt=""
-        />
+        /> */}
       </section>
       <div className=" flex justify-center z-10 items-center gap-5 flex-col ">
         <div className="overflow-hidden w-[7em] h-[7em] rounded-full ">

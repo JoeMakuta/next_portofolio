@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         main: "url('../public/asserts/Dot Grid.svg')",
+        background_user: "url('../public/asserts/background_image.jpg')",
       },
       colors: {
         dark_bg: "#161616",
