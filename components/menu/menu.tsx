@@ -72,12 +72,13 @@ const Menu = ({ children }: { children: React.ReactNode }) => {
                 })}
               </div>
               <Theme setShowMenu={setShowMenu} />
-              {/* <div>
+              <div>
                 <input
+                  id="color-input"
                   className="border-none bg-inherit rounded-full p-0 w-7 h-7"
                   type="color"
                 />
-              </div> */}
+              </div>
             </div>
           </div>
         </nav>

@@ -40,4 +40,23 @@
   html {
     scroll-behavior: smooth;
   }
+
+  #color-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  #color-input::-webkit-color-swatch {
+    border-radius: 100%;
+    border: 1px solid #000000;
+  }
+  #color-input::-moz-color-swatch {
+    border-radius: 100%;
+    border: 1px solid #000000;
+  }
 }
